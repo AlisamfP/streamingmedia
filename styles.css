@@ -1,0 +1,82 @@
+:root {
+  --darkestBlue: #020659;
+  --darkerBlue: #020873;
+  --darkBlue: #030A83;
+  --brightBlue: #2104D9;
+  --lightBlue: #0D8DF8;
+  --lightBlueAlt: #2699FB;
+  --magenta: #590242;
+  --white: #FFF;
+  --black: #000;
+
+  --fonts: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1 {
+  font-size: 1.25em;
+}
+
+h2, h3 {
+  font-size: 1em;
+}
+
+p, dl, dd {
+  font-size: 1em;
+}
+
+footer p {
+  font-size: 0.75em;
+}
+
+html {
+  font-family: var(--fonts);
+  background-color: var(--darkestBlue);
+}
+
+body {
+  height: 100vh;
+  margin: 0 auto;
+  max-width: 834px;
+  color: var(--white);
+  display: grid;
+  grid-template-rows: 1fr 4fr 0.5fr;
+}
+
+header {
+  background-image: linear-gradient(to right, var(--brightBlue), var(--black));
+  display: grid;
+  grid-template-columns: 1fr;
+}
+nav {
+  grid-row: 1/2;
+  margin: -16px 0;
+}
+
+nav ul {
+  background-color: var(--darkBlue);
+  display: flex;
+  padding: 5px 20px;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+nav ul li {
+  list-style: none;
+  font-variant: small-caps;
+  width: 100px;
+  padding: 5px;
+}
+
+nav ul li:hover {
+  background-color: var(--magenta);
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+#trendingSongs {
+  grid-column: 1/-1;
+}
