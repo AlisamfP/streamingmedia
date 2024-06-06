@@ -12,6 +12,7 @@
   --fonts: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+
 h1 {
   font-size: 1.25em;
 }
@@ -317,27 +318,63 @@ audio ::-webkit-media-controls-enclosure {
   line-height: normal;
 }
 
+
+.condense h3 {
+  color: var(--white);
+  }
+
+#curated div {
+  background-color: var(--brightBlue);
+  }
+  
+  #curated section {
+    background-color: var(--darkBlue);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 167px;
+  padding: 10px;
+  
+}
+
+footer {
+  background-color: var(--white);
+  text-align: center;
+  color: var(--magenta);
+}
+
 @media screen and (min-width:834px) {
   .more {
     margin-left: 80%;
   }
-  /* .condense {
+  .condense {
     display: grid;
     grid-template-columns: 1fr 1fr;
-  } */
-}
+  }
+  .condense .scroll {
+    grid-template-columns: 1fr;
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 500px;
+  }
 
-.condense h3 {
-  color: var(--white);
-}
+  .condense button {
+    margin-left: 60%;
+  }
 
-#curated div {
-  background-color: var(--darkBlue);
-}
+  #curated section, #playlists section {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    width: unset;
+    align-items: center;
+    justify-items: center;
+    height: 150px;
+    gap: 0 1em;
+  }
 
-#curated section {
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  #curated section img, #playlists section img {
+    grid-row: 1/3;
+  }
 }
