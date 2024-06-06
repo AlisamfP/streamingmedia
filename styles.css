@@ -256,6 +256,7 @@ audio {
   margin: 10px 0 30px 32px;
 }
 
+
 audio ::-webkit-media-controls-mute-button {
   background-color: var(--white);
   border-radius: 50%;
@@ -317,16 +318,26 @@ audio ::-webkit-media-controls-enclosure {
 }
 
 @media screen and (min-width:834px) {
-  #trending .more {
+  .more {
     margin-left: 80%;
   }
-  .condense {
+  /* .condense {
     display: grid;
     grid-template-columns: 1fr 1fr;
-  }
+  } */
 }
 
+.condense h3 {
+  color: var(--white);
+}
 
 #curated div {
   background-color: var(--darkBlue);
+}
+
+#curated section {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
