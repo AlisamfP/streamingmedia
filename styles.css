@@ -19,7 +19,8 @@ h1 {
 h2, h3 {
   font-size: 1em;
   color: var(--magenta);
-  
+  margin: 20px 20px 5px;
+
 }
 
 h1, h2, h3 {
@@ -60,6 +61,10 @@ header {
   background-image: linear-gradient(to right, var(--brightBlue), var(--black));
   display: grid;
   grid-template-columns: 1fr;
+}
+
+header div {
+  padding-left: 20px;;
 }
 
 nav {
@@ -181,6 +186,8 @@ main {
   width: 375px;
   background-color: var(--white);
 }
+
+
 @media screen and (min-width:834px) {
   main {
     width: 834px;
@@ -289,6 +296,37 @@ audio ::-webkit-media-controls-enclosure {
 
 }
 
-#playlists {
+#playlists div {
+  background-color: var(--lightBlueAlt);
+}
 
+#playlists section {
+  background-color: var(--lightBlue);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 167px;
+  padding: 10px;
+}
+
+#playlists section h3 {
+  color: var(--white);
+  line-height: normal;
+}
+
+@media screen and (min-width:834px) {
+  #trending .more {
+    margin-left: 80%;
+  }
+  .condense {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+
+#curated div {
+  background-color: var(--darkBlue);
 }
